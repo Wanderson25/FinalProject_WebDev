@@ -1,0 +1,161 @@
+
+.special-activities {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.special-activities .add_pl:hover {
+    color: white;
+}
+
+.favorite.activated {
+    color: red;
+}
+
+.favorite:hover {
+    color: white;
+}
+.seek .track,
+.volume .track {
+    background: #ddd;
+}
+
+.seek .thumb,
+.volume .thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #D81159;
+}
+
+.seek {
+    position: relative;
+    width: 120px;
+}
+
+.seek .track {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 5px;
+}
+
+.seek .thumb {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.volume {
+  position: relative;
+  height: 100px;
+}
+
+.volume .track {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 100%;
+  background: #ddd;
+}
+
+.volume .progress {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 100%;
+  background: #4CAF50;
+}
+
+.volume .thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #4CAF50;
+}
+.seek .progress {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5px;
+    background: #4CAF50;
+}
+
+
+#addPlaylistModal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    width: 100%;
+    height:100%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+#addPlaylistModal .modal-content {
+    background: repeating-linear-gradient(to left, #FFDAB9, #FF69B4, #FF7F7F, #ADD8E6, #FFDAB9);
+    background-size: 400% 120%;
+    animation: gradient_loop 3s linear infinite;
+    background-blend-mode: lighten;
+    margin: 15% auto;
+    padding: 20px;
+    border: solid black;
+    width: 80%; 
+}
+
+
+#addPlaylistModal .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#addPlaylistModal .close:hover,
+#addPlaylistModal .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#addPlaylistModal.animate {
+    animation-name: fadeIn;
+    animation-duration: .5s;
+}
+
+
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+
+#addPlaylistForm input[type="submit"] {
+    font-size: 100%;
+    padding: 10px 20px;
+    background-color: #006BA6;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 0;
+    font-family: "DotGothic16", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width:100%;
+    border: solid black;
+}
+
+#addPlaylistForm input[type="submit"]:hover {
+    background-color: #D81159;
+}
+

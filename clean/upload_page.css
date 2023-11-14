@@ -1,0 +1,130 @@
+form {
+    margin: 50px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 700px;
+    padding: 20px;
+    background: repeating-linear-gradient(to left, #FFDAB9, #FF69B4, #FF7F7F, #ADD8E6, #FFDAB9);
+    background-size: 400% 100%;
+    animation: gradient_loop 3s linear infinite;
+    box-shadow: 0px 0px 10px #888888;
+    padding-right: 43px;
+    padding-top: 1px;
+    border: solid black;
+    
+}
+
+button[type="button"],
+button[type="submit"] {
+    font-size: 100%;
+    padding: 10px 20px;
+    background-color: #006BA6;
+    color: #fff;
+    border: solid black;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: "DotGothic16", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #D81159;
+}
+
+button[type="button"]:hover {
+	background-color: #FFBC42;
+    color: black;
+}
+
+input[type="text"],
+textarea,
+input[type="date"],
+input[type="file"],
+input[type="number"] {
+    display: block;
+    width: 256px;
+    padding: 10px;
+    border: solid black;
+    box-shadow: 0px 0px 5px #888888;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+}
+
+input[type="reset"] {
+    font-size: 100%;
+    padding: 10px 20px;
+    background-color: #D81159;
+    color: #fff;
+    border: solid black;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: "DotGothic16", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+input[type="reset"]:hover {
+    background-color: #FF69B4;
+    color: black;
+}
+
+.cover-image {
+    display: block;
+    width: 340px;
+    padding: 10px;
+    border: solid black;
+    box-shadow: 0px 0px 5px #888888;
+    margin: auto;
+    resize: none;
+}
+
+.twocol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.side_a {
+    width: 50%;
+}
+.side_b {
+    flex: 1;
+    margin-right: -35px;
+}
+
+#loading {
+    font-size: 20px;
+    margin-top: 35px;
+    font-weight: bold;
+}
+.dot {
+    animation-name: dot;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes dot {
+    0%   {opacity: 0;}
+    25%  {opacity: 0;}
+    35%  {opacity: 1;}
+    100% {opacity: 1;}
+}
+.bottom {
+    display: inline-flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.extra {
+    display: inline-flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,124 @@
+body {
+    font-family: "DotGothic16", sans-serif;
+    letter-spacing: 2px;
+}
+
+.disable-select {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.content {
+    margin: 50px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 700px;
+    padding: 20px;
+    background: repeating-linear-gradient(to left, #FFDAB9, #FF69B4, #FF7F7F, #ADD8E6, #FFDAB9);
+    background-size: 400% 100%;
+    animation: gradient_loop 3s linear infinite;
+    box-shadow: 0px 0px 10px #888888;
+    padding-top: 0px;
+    border: solid black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@keyframes gradient_loop {
+    0% {
+        background-position:100% 50%
+    }
+    100% {
+        background-position:-33% 50%
+    }
+}
+
+.navbar {
+    margin: 10px auto;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #888888;
+    padding-top: 0px;
+    border: solid black;
+    display: inline-flex;
+    column-gap: 60px;
+    justify-content: center;
+}
+
+
+button[type="button"],
+button[type="submit"] {
+    font-size: 100%;
+    padding: 10px 20px;
+    background-color: #006BA6;
+    color: #fff;
+    border: solid black;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: "DotGothic16", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+button[type="button"]:hover {
+    background-color: #FFBC42;
+    color: black;
+}
+
+.bottom {
+    display: inline-flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+textarea {
+    display: block;
+    padding: 10px;
+    border: solid black;
+    margin: auto;
+    box-shadow: 0px 0px 5px #888888;
+    width: 100%;
+    font-size: 15pt;
+}
+
+button[type="submit"] {
+    font-size: 100%;
+    padding: 10px 20px;
+    background-color: #006BA6;
+    color: #fff;
+    border: solid black;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: "DotGothic16", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #D81159;
+}
+
+select {
+    display: block;
+    width: 280px;
+    padding: 10px;
+    border: solid black;
+    box-shadow: 0px 0px 5px #888888;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    resize: none;
+}
